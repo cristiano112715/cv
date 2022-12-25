@@ -12,30 +12,86 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/style.css">
 
     <style>
       html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+
+      .w3-container .w3-content {
+        background: #fff;
+        color: #444;
+        min-height: 100%;
+      }
+        
+      #dark-mode-input {
+        display: none;
+      }
+    
+      #dark-mode-input:checked ~ .w3-container 
+      
+      {
+        background: rgb(66, 57, 71);
+        color: rgb(255, 255, 255); 
+      }
+      
+      .dark-mode-toggler {
+        position: fixed;
+        width: 40px;
+        height: 20px;
+        background:  rgb(107, 11, 231);
+        border: 2px solid #bbb;
+        border-radius: 20px;
+        top: 30px;
+        right: 40px;
+        transition: all 300ms ease-in-out;
+      }
+    
+      .dark-mode-toggler div {
+        width: 12px;
+        height: 12px;
+        background: #ccc;
+        border-radius: 50%;
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        transition: all 300ms ease-in-out;
+      }
+    
+      #dark-mode-input:checked ~ .dark-mode-toggler {
+        background: #ccc;
+      }
+    
+      #dark-mode-input:checked ~ .dark-mode-toggler div {
+        background: rgb(107, 11, 231);
+        left: 21px;
+      }
            
     </style>
     
   </head>
 
-  <body class="w3-light-grey" cz-shortcut-listen="true">
-
-        
+  <body class="w3-light-grey " cz-shortcut-listen="true">
+    
+    <input type="checkbox" id="dark-mode-input" />
+                <label class="dark-mode-toggler" for="dark-mode-input">
+                 <div></div>
+                </label>
+    
+    
     <!-- Page Container -->
-    <div class="w3-content w3-margin-top" style="max-width:1400px;">
-  
+    <div  class=" w3-container w3-content  w3-margin-top" style="max-width:1400px;">
+        
       <!-- The Grid -->
       <div class="w3-row-padding">
   
         <!-- Left Column -->
         <div class="w3-third">
   
-          <div class="w3-white w3-text-grey w3-card-4">
+          <div  class="  w3-card-4">
             <!-- @falvojr: This container has been modified to not use a profile picture. -->
             <div class="w3-container">
               <h2>João Cristiano da Silva Araújo</h2>
+              
             </div>
             <div class="w3-container">
               <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-deep-purple"></i>Assistente Administrativo na REDE SAÚDE</p>
@@ -88,37 +144,37 @@
         </div>
   
         <!-- Right Column -->
-        <div class="w3-twothird">
+        <div  class="w3-twothird">
     
-          <div class="w3-container w3-card w3-white w3-margin-bottom">
-            <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-terminal fa-fw w3-margin-right w3-xxlarge w3-text-deep-purple"></i>Sobre</h2>
-            <p>TODO</p>
+          <div class="w3-container w3-card  w3-margin-bottom">
+            <h2 class="w3-padding-16"><i class="fa fa-terminal fa-fw w3-margin-right w3-xxlarge w3-text-deep-purple"></i>Sobre</h2>
+            <p>Atualmente estou em trasição de carreira com foco em Front-End (HTML, CSS e JAVASCRIPT), tambem estou me capacitando em Banco de Dados em MySQL, SQL Server e PostegreSQL.</p>
           </div>
 
-          <div class="w3-container w3-card w3-white w3-margin-bottom">
-            <h2 class="w3-text-grey w3-padding-16">
+          <div class="w3-container w3-card w3-margin-bottom">
+            <h2 class="w3-padding-16">
               <i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-deep-purple"></i>Experiências
             </h2>
             <div class="w3-container">
-              <h5 class="w3-opacity"><b>TODO</b></h5>
-              <h6 class="w3-text-deep-purple"><i class="fa fa-calendar fa-fw w3-margin-right"></i>INICIO - <span class="w3-tag w3-deep-purple w3-round">Atual</span></h6>
+              <h5>Desenvolvedor apaixonado busco um estágio na area de desenvolvimento de sistema para que eu possa utilizar meu conhecimento adquirido tanto em cursos quanto em meus projetos pessoais.</h5>
+              <h6><i class="fa fa-calendar fa-fw w3-margin-right"></i> INICIO - <span class="w3-tag w3-deep-purple w3-round">FIM</span></h6>
               <p>TODO</p>
               <hr>
             </div>
             <div class="w3-container">
-              <h5 class="w3-opacity"><b>TODO</b></h5>
-              <h6 class="w3-text-deep-purple"><i class="fa fa-calendar fa-fw w3-margin-right"></i>INICIO - FIM</h6>
+              <h5><b>TODO</b></h5>
+              <h6><i class="fa fa-calendar fa-fw w3-margin-right"></i>INICIO - FIM</h6>
               <p>TODO</p>
             </div>
           </div>
   
-          <div class="w3-container w3-card w3-white">
-            <h2 class="w3-text-grey w3-padding-16">
+          <div class="w3-container w3-card w3-margin-bottom">
+            <h2 class=" w3-padding-16">
               <i class="fa fa-graduation-cap fa-fw w3-margin-right w3-xxlarge w3-text-deep-purple"></i>Educação
             </h2>
             <div class="w3-container">
-              <h5 class="w3-opacity"><b>Digital Innovation One (DIO)</b></h5>
-              <h6 class="w3-text-deep-purple"><i class="fa fa-calendar fa-fw w3-margin-right"></i>INICIO - <span class="w3-tag w3-deep-purple w3-round">Atual</span></h6>
+              <h5 ><b>Digital Innovation One (DIO)</b></h5>
+              <h6><i class="fa fa-calendar fa-fw w3-margin-right"></i>INICIO - <span class="w3-tag w3-deep-purple w3-round">Atual</span></h6>
               <p>
                 Maior plataforma de educação aberta em TI da América Latina, com mais 1 milhão de usuários. 
                 A DIO possui parcerias com algumas das empresas mais inovadoras do mundo, proporcionando experiências 
@@ -137,33 +193,32 @@
               <hr>
             </div>
             <div class="w3-container">
-              <h5 class="w3-opacity"><b> CENTRO UNIVERSITÁRIO ANHANGUERA PITÁGORAS AMPLI </b></h5>
-              <h6 class="w3-text-deep-purple"><i class="fa fa-calendar fa-fw w3-margin-right"></i> Janeiro 2023 - julho 2025</h6>
+              <h5 ><b> CENTRO UNIVERSITÁRIO ANHANGUERA PITÁGORAS AMPLI </b></h5>
+              <h6><i class="fa fa-calendar fa-fw w3-margin-right"></i> Janeiro 2023 - julho 2025</h6>
               <p>Graduação em Análise e Desenvolvimento de Sistemas</p>
             </div>
           </div>
 
-          <div class="w3-container w3-card w3-white w3-margin-bottom">
-            <h2 class="w3-text-grey w3-padding-16">
+          <div class="w3-container w3-card  w3-margin-bottom">
+            <h2 class=" w3-padding-16">
               <i class="fa fa-git fa-fw w3-margin-right w3-xxlarge w3-text-deep-purple"></i>Projetos
             </h2>
             <div class="w3-container">
-              <h6 class="w3-text-deep-purple">
-                <i class="fa fa-github fa-fw w3-margin-right"></i>
+              <h6>
+                <i class="fa fa-github fa-fw w3-margin-right w3-text-deep-purple"></i>
                 <a href="https://github.com/cristiano112715/Database-Experience-05" target="_blank">cristiano112715/Database-Experience-05</a>
               </h6>
               <p>O Papel dos Bancos de Dados SQL e NoSQL na Engenharia de Dados. Hoje temos muitas opções dentro dos bancos relacional e não-relacional.</p>
               <hr>
             </div>
             <div class="w3-container">
-              <h6 class="w3-text-deep-purple">
-                <i class="fa fa-gitlab fa-fw w3-margin-right"></i>
+              <h6>
+                <i class="fa fa-gitlab fa-fw w3-margin-right w3-text-deep-purple"></i>
                 <a href="LINK_GITLAB" target="_blank">USUARIO_GITLAB/REPO</a>
               </h6>
               <p>TODO</p>
             </div>
-          </div>
-  
+         
           <!-- End Right Column -->
         </div>
   
@@ -171,9 +226,10 @@
       </div>
   
       <!-- End Page Container -->
-    </div>
-  
-    <footer class="w3-container w3-deep-purple w3-center w3-margin-top">
+    
+  </div>
+    <footer>
+      <div class="w3-container  w3-deep-purple w3-center w3-margin-top w3-card">
       <p>Minhas Redes Sociais</p>
       <a href="https://github.com/cristiano112715" target="_blank"><i class="fa fa-github w3-hover-opacity"></i></a>
       <a href="https://www.linkedin.com/in/cristiano-araujo-jcsa" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
@@ -181,8 +237,10 @@
       <a href="LINK_INSTAGRAM" target="_blank"><i class="fa fa-instagram w3-hover-opacity"></i></a>
       <a href="LINK_TWITTER" target="_blank"><i class="fa fa-twitter w3-hover-opacity"></i></a>
       <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+      </div>
     </footer>
   
   </body>
 
 </html>
+
